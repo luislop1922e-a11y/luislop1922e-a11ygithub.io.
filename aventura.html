@@ -3,87 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌟 Aventura - Biblioteca Mágica</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="aventura.css">
-    <style>
-        </style>
+    <title>Aventura - Biblioteca Mágica</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Fredoka:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- AQUÍ CONECTAMOS EL CSS NUEVO -->
+    <link rel="stylesheet" href="paginas.css">
 </head>
 <body>
-    <div class="stars">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
+
+    <!-- Fondo de destellos mágicos (Requerido por tu CSS) -->
+    <div class="magic">
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
     </div>
 
+    <!-- Menú -->
     <nav>
         <div class="nav-links">
-            <a href="proyecto.html" class="back-btn">🏠 Página Principal</a>
-            <a href="submenúaventura.html">📖 Submenu Aventura</a>
-            <a href="drama.html">🎭 Drama</a>
-            <a href="fantasía.html">🌈 Fantasía</a>
-            <a href="arte.html">🎨 Arte</a>
+            <a href="index.html">🏠 Inicio</a>
+            <a href="Aventura.html" style="background: #667eea; color: white;">🌟 Aventura</a>
+            <a href="Drama.html">🎭 Drama</a>
+            <a href="Fantasia.html">🐉 Fantasía</a>
+            <a href="Arte.html">🎨 Arte</a>
+            <a href="contactame.html">✉️ Contacto</a>
         </div>
     </nav>
 
     <div class="header">
-        <h1>🌟 AVENTURA 🌟</h1>
-        <p>Viajes épicos más allá de tu imaginación</p>
+        <h1>Género: Aventura</h1>
+        <p>Viajes épicos y descubrimientos asombrosos</p>
     </div>
 
     <div class="container">
+        
+        <!-- CAJA DE TEXTO -->
         <div class="content-box">
-            <h2>📚 El Espíritu de la Aventura</h2>
-            <p>Los libros de aventura nos llevan a lugares que nunca imaginamos visitar. Desde las cimas de montañas imposibles hasta las profundidades de océanos inexplorados, cada página es una invitación a descubrir lo desconocido.</p>
-            <p>En estas historias, los héroes no nacen, se forman. Cada obstáculo superado, cada peligro enfrentado, cada decisión valiente construye personajes que nos inspiran a ser mejores versiones de nosotros mismos.</p>
-            <p>La aventura no termina cuando cierras el libro. Continúa en tu corazón, recordándote que el verdadero viaje comienza cuando te atreves a soñar en grande y actuar con valentía.</p>
+            <h2>¿Qué es el género de Aventura?</h2>
+            <p>La aventura es un género literario que enfatiza los viajes, el riesgo y la excitación física. En estas historias, el protagonista debe salir de su mundo cotidiano para enfrentarse a desafíos extraordinarios.</p>
+            <p>Desde la búsqueda de tesoros perdidos hasta la exploración de planetas lejanos, los libros de aventura nos mantienen al borde del asiento.</p>
         </div>
 
-        <div class="gallery">
-            <div class="img-card">
-                <img src="https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?w=800&q=80" alt="Montañas épicas">
-                <div class="caption">🏔️ Montañas Épicas</div>
-            </div>
-            <div class="img-card">
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Exploración infinita">
-                <div class="caption">🧭 Exploración Infinita</div>
-            </div>
-            <div class="img-card">
-                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80" alt="Naturaleza salvaje">
-                <div class="caption">🌲 Naturaleza Salvaje</div>
-            </div>
-            <div class="img-card">
-                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Cumbres extremas">
-                <div class="caption">⛰️ Cumbres Extremas</div>
+        <!-- GALERÍA DE IMÁGENES -->
+        <div class="content-box">
+            <h2>📚 Libros Recomendados</h2>
+            <div class="gallery">
+                <!-- Tarjeta 1 -->
+                <div class="img-card">
+                    <!-- Cambia 'libro1.jpg' por el nombre de tu foto real -->
+                    <img src="https://via.placeholder.com/300x400?text=La+Isla+del+Tesoro" alt="Libro 1">
+                    <div class="caption">La Isla del Tesoro</div>
+                </div>
+                
+                <!-- Tarjeta 2 -->
+                <div class="img-card">
+                    <img src="https://via.placeholder.com/300x400?text=El+Hobbit" alt="Libro 2">
+                    <div class="caption">El Hobbit</div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="img-card">
+                    <img src="https://via.placeholder.com/300x400?text=Viaje+al+Centro+de+la+Tierra" alt="Libro 3">
+                    <div class="caption">Viaje al Centro de la Tierra</div>
+                </div>
             </div>
         </div>
 
+        <!-- ZONA DE VIDEO -->
         <div class="video-zone">
-            <h2>🎬 Video Inspirador de Aventura</h2>
+            <h2>🎬 Reseña Destacada</h2>
             <div class="video-wrapper">
-                <video controls poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80">
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
+                <!-- Si tienes un video en tu carpeta, pon su nombre en src -->
+                <!-- Si no, puedes usar este de ejemplo o borrar esta sección -->
+                <video controls>
+                    <source src="video_aventura.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
                 </video>
-                <p style="margin-top: 20px; font-size: 1.2rem; text-align: center;">Descubre historias de valentía y exploración</p>
+                <p style="text-align: center; margin-top: 10px;">Descubre por qué leer aventuras expande tu mente.</p>
             </div>
         </div>
 
+        <!-- Botón para volver -->
         <div class="submenu-area">
-            <a href="submenu-aventura.html" class="submenu-btn">📖 Ver Libros Recomendados de Aventura</a>
+            <a href="index.html" class="submenu-btn">Volver a la Biblioteca</a>
         </div>
+
     </div>
 
     <footer>
-        <p>© 2025 Biblioteca Mágica - Sección Aventura</p>
-        <p>UACM | Computación II</p>
-        <p><a href="proyecto.html">← Volver al Inicio</a></p>
+        <p>✨ © 2025 Biblioteca Mágica | UACM ✨</p>
+        <p><a href="contactame.html">¿Tienes una sugerencia? ¡Escríbenos!</a></p>
     </footer>
+
 </body>
 </html>
