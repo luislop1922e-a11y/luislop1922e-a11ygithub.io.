@@ -3,147 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📬 Contacto - Biblioteca Mágica</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📬</text></svg>">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Contactame.css">
-    <style>
-        </style>
+    <title>Contáctame - Biblioteca Mágica</title>
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Fredoka:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- AQUÍ CONECTAMOS EL CSS QUE ME MANDASTE -->
+    <link rel="stylesheet" href="contacto.css">
 </head>
 <body>
-    <div class="bubble-bg" id="bubbles"></div>
- <nav>
+
+    <!-- Fondo de burbujas animadas -->
+    <div class="bubble-bg">
+        <div class="bubble" style="width: 60px; height: 60px; left: 10%; animation-duration: 8s;"></div>
+        <div class="bubble" style="width: 40px; height: 40px; left: 30%; animation-duration: 6s; animation-delay: 1s;"></div>
+        <div class="bubble" style="width: 70px; height: 70px; left: 70%; animation-duration: 9s; animation-delay: 2s;"></div>
+        <div class="bubble" style="width: 30px; height: 30px; left: 90%; animation-duration: 5s;"></div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav>
         <div class="nav-links">
-            <a href="proyecto.html">🏠 Inicio</a>
-            <a href="aventura.html">🌟 Aventura</a>
-            <a href="drama.html">🎭 Drama</a>
-            <a href="fantasía.html">🌈 Fantasía</a>
-            <a href="arte.html">🎨 Arte</a>
+            <a href="index.html">🏠 Inicio</a>
+            <a href="Aventura.html">🌟 Aventura</a>
+            <a href="Drama.html">🎭 Drama</a>
+            <a href="Fantasia.html">🐉 Fantasía</a>
+            <a href="Arte.html">🎨 Arte</a>
         </div>
     </nav>
 
     <div class="container">
-    
         <div class="header">
-            <h1>📬 CONTÁCTAME 📬</h1>
-            <p>¡Me encantaría saber de ti!</p>
+            <h1>¡Escríbeme!</h1>
+            <p>¿Tienes alguna duda o recomendación de libros?</p>
         </div>
-         <div class="form-card">
-            <h2>✉️ Envíame un Mensaje</h2>
-            
-            <form id="contactForm" action="https://formspree.io/f/xyzygejq" method="POST">
+
+        <!-- Tarjeta del Formulario -->
+        <div class="form-card">
+            <h2>✨ Enviar Mensaje ✨</h2>
+            <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+                
                 <div class="form-group">
-                    <label for="nombre">📝 Nombre Completo</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    <label>Tu Nombre Mágico:</label>
+                    <input type="text" name="nombre" placeholder="Ej: Harry Potter" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">📧 Correo Electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    <label>Tu Correo Electrónico:</label>
+                    <input type="email" name="email" placeholder="correo@ejemplo.com" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="asunto">📌 Asunto</label>
-                    <input type="text" id="asunto" name="asunto" placeholder="¿De qué quieres hablar?" required>
+                    <label>Tu Mensaje:</label>
+                    <textarea name="mensaje" placeholder="Escribe aquí tus pensamientos..." required></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label for="mensaje">💬 Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="¿Qué libro te ha cambiado la vida? 📚 Cuéntame tus recomendaciones..." required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">🚀 ENVIAR MENSAJE</button>
+                <button type="submit" class="submit-btn">🚀 ENVIAR LECHUZA</button>
             </form>
-
-            <div id="message" class="message"></div>
+            
+            <!-- Mensaje oculto (se activa con JS si quisieras, por ahora es decorativo en el CSS) -->
+            <div class="message success">¡Mensaje enviado con éxito! 📬</div>
         </div>
 
+        <!-- Información adicional -->
         <div class="contact-info">
-            <h3>📞 Otras Formas de Contacto</h3>
-            <p><span class="emoji">👤</span><strong>Herlinda Jacqueline Garay Perez</strong></p>
-            <p><span class="emoji">📧</span>jacqueline.garay@estudiantxs.uacm.edu.mx</p>
-            <p><span class="emoji">🏛️</span>Universidad Autónoma de la Ciudad de México</p>
-            <p><span class="emoji">📚</span>Computación II - 2025</p>
+            <h3>📬 Otros medios de contacto</h3>
+            <p><span class="emoji">📧</span> jacqueline.garay@estudiantxs.uacm.edu.mx</p>
+            <p><span class="emoji">📍</span> UACM Casa Libertad</p>
+            <p><span class="emoji">⏰</span> Lunes a Viernes: 9:00 AM - 6:00 PM</p>
         </div>
     </div>
 
     <footer>
-        <p>✨ © 2025 Biblioteca Mágica | UACM ✨</p>
-        <p><a href="proyecto.html">← Volver al Inicio</a></p>
+        <p>✨ © 2025 Biblioteca Mágica | <a href="index.html">Volver al Inicio</a> ✨</p>
     </footer>
 
-    <script>
-        function createBubbles() {
-            const container = document.getElementById('bubbles');
-            const bubbleCount = 15;
-            
-            for (let i = 0; i < bubbleCount; i++) {
-                const bubble = document.createElement('div');
-                bubble.className = 'bubble';
-                
-                const size = Math.random() * 100 + 50;
-                bubble.style.width = size + 'px';
-                bubble.style.height = size + 'px';
-                bubble.style.left = Math.random() * 100 + '%';
-                bubble.style.top = Math.random() * 100 + '%';
-                bubble.style.animationDelay = Math.random() * 6 + 's';
-                bubble.style.animationDuration = (Math.random() * 4 + 4) + 's';
-                
-                container.appendChild(bubble);
-            }
-        }
-
-    
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const form = e.target;
-            const submitBtn = form.querySelector('.submit-btn');
-            const messageDiv = document.getElementById('message');
-            const originalBtnText = submitBtn.innerHTML;
-            
-
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '📤 Enviando...';
-            messageDiv.style.display = 'none';
-            
-        
-            fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-        
-                    messageDiv.className = 'message success';
-                    messageDiv.innerHTML = '✅ ¡Mensaje enviado con éxito! Gracias por contactarme 📚✨<br>Te responderé pronto.';
-                    messageDiv.style.display = 'block';
-                    form.reset();
-                    
-            
-                    messageDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                } else {
-        
-                    throw new Error('Error en el servidor');
-                }
-            })
-            .catch(error => {
-            
-                messageDiv.className = 'message error';
-                messageDiv.innerHTML = '❌ Hubo un problema al enviar el mensaje. Por favor intenta de nuevo.';
-                messageDiv.style.display = 'block';
-                console.error('Error:', error);
-            })
-            .finally(() => {
-    
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalBtnText;
-            });
-        });
-        window.addEventListener('load', createBubbles);
-    </script>
 </body>
 </html>
